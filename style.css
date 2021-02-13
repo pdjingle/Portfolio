@@ -1,0 +1,56 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.1fr 0.3fr 0.3fr 0.3fr;
+  /* Why won't my photo line up */
+  gap: 1px 1px;
+  grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "about about portfolio portfolio"
+    /* "about about portfolio portfolio" */
+    "footer footer footer footer";
+}
+
+.header { grid-area: header; 
+  padding: 2px;
+  text-align: center;
+  background: #737c7a;
+  color: white;
+  font-size: 30px;
+}
+
+.nav { grid-area: nav; 
+    background: green;
+    display: inline;
+
+    /* Why does my text not display across the page as a nav */
+  } 
+#left {
+list-style-type: none;
+
+}
+
+#left li {
+  display: inline;
+  margin-left: 23px;
+}
+
+.footer { grid-area: footer; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+    color: white;
+    /* text-align: center; */
+    display: inline;
+}
+  /* grid-auto-rows: max-content; */ */
+
+/* h3 {
+  /* font-size: 1.5rem;
+  text-transform: uppercase;
+  /* margin: 2rem 0 0 0; */
+  /* line-height: 0.5; */
+} */ */
