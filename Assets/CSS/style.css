@@ -1,0 +1,59 @@
+.grid-container {
+
+  gap: 1px 1px;
+  grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "about about portfolio portfolio"
+    "footer footer footer footer";
+}
+.header { grid-area: header; 
+  padding: 5px;
+  text-align: center;
+  background: #772ea1;
+  color: white;
+  font-size: 30px;
+}
+.nav { grid-area: nav; 
+    background: #772ea1;
+    display: inline;
+    text-size-adjust: auto;
+    padding-right: 100%;
+  } 
+
+#left {
+list-style-type: none;
+}
+
+#left li {
+  display: inline;
+  margin-left: 250px;
+}
+
+.footer { grid-area: footer; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+    color: white;
+    /* text-align: center; */
+    display: inline;
+    }
+
+   #right {
+      list-style-type: none;      
+      }
+      
+   #right li {
+        display: inline;
+        margin-left: 250px;
+      }
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
